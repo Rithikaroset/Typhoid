@@ -1,0 +1,163 @@
+body{
+   background: repeating-linear-gradient(
+      50deg,
+    #b3ffff,
+    #ffffb3,
+  #b3ffb3);
+  text-align:center;
+  height:auto;
+  padding-bottom:20px;
+  
+}
+h1{
+  color:blue;opacity:1;
+}
+#heading{
+  text-align:center;
+  padding-top:3vw;
+  padding-bottom:1vw;
+  background-color:white;
+  opacity:0.35;
+  height:auto;
+  width:100%;
+  font-size:1.5em;
+  text-decoration:underline;
+}
+
+#description{
+  text-align:center;
+  padding-top:0.5vw;
+  padding-bottom:0.5vw;
+  background-color:#e6ffff;
+  font-size:1.5em;
+  width:100%;
+  }
+#form{
+  padding-top:4vw;
+  padding-bottom:4vw;
+  text-align:center;
+  margin-top: 20px;
+  margin-right:10%;
+  margin-left:10%;
+  margin-bottom:20px;
+  box-shadow:5px 5px 5px 3px rgb(51, 51, 51);
+  background:white;
+  color:black;
+  font-weight:bold;
+  width:5vw autofill;
+  position:relative;
+  height:auto; border-radius:50px;
+  }
+#age{
+  font-size:20px; 
+ font-family:Arial,monospace;
+ 
+}
+#Age{
+  width:65%;
+  border-radius:50px;
+  font-size:20px;
+}
+#Sex{
+  font-size:20px; 
+ font-family:Arial,monospace;
+ 
+}
+#gender{
+  width:65%;
+  border-radius:50px;
+  font-size:20px;
+}
+#temp{
+  font-size:20px; 
+ font-family:Arial,monospace;
+ 
+  
+}
+#Temperature{
+  width:65%;
+  border-radius:50px;
+  font-size:20px;
+  
+}
+#sbp{
+  font-size:20px; 
+ font-family:Arial,monospace;
+ 
+  
+}
+#systolic{
+  width:65%;
+  border-radius:50px;
+  font-size:20px;
+  
+}
+#dbp{
+  font-size:20px; 
+ font-family:Arial,monospace;
+ 
+}
+#diastolic{
+  width:65%;
+  border-radius:50px;
+  font-size:20px;
+  
+}
+#HR{
+  font-size:20px; 
+ font-family:Arial,monospace;
+ 
+}
+#heart_rate{
+  width:65%;
+  border-radius:50px;
+  font-size:20px;
+  
+}
+
+#clinical1{
+  
+  font-size:20px; 
+ font-family:Arial,monospace;
+ 
+}
+
+#symptoms1{
+  
+  width:65%;
+  border-radius:50px;
+  font-size:20px;
+}
+#clinical2{
+  font-size:20px; 
+ font-family:Arial,monospace;
+ 
+  
+}
+#symptoms2{
+  width:65%;
+  border-radius:50px;
+  font-size:20px;
+  
+}
+
+#spleen{
+ font-size:20px; 
+ font-family:Arial,monospace;
+  
+}
+
+#abdominal_scan{
+  width:65%;
+  border-radius:50px;
+  font-size:20px;
+  
+}
+
+#b{
+  border-radius:60px;
+  font-size:20px;
+  height:50px;
+  background-color:black;
+  color:white;
+}

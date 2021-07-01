@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <link rel="stylesheet" type="text\css" href=typhoidcss.css/>
+  <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=kIh6284sJ6vlBug-CbBoJ0YtddujPd7v7RctPdRRvV3QwbPMfhMbwFIUp90bYi-yMiouOp41GMCWTP5_xfoUeVxTHyiRqtGBUvT07ExHodpdYxhFZqQhJ1vb1OLUeIBq2jxmFbseaRur18wsRr0j-TPT36sw4DTJXUIKxomSOU0GT9zXggme78RndrxwGCIUDoQdBfwH7qzEnT5RvyShAWA7od1vFrJ28BcavX4hS0_BvNhH3NlHi8VWjPpk_P3uGqWuf9Ywbk48Zu-sNaZ3R1LscT2vs7Q4F_DDI02d4hB28DvtkVIB1oNxwbyzL5erRdkqI4aRyN2ZCKEsJkfPnXbPNSftzukErzGQVO0cxwADy1eIS94_MvIr-3FkxOog71LzK4LnodPywfjDQEzSugC3ifZ0N2GCr-6eqW8yHt3W1x7lWg22ISn89QzXhEMSHuUwefkxw2MgyGCz5ym74wY5TznFhcl8pzb_e1hgh6S12j1vXCMxB0fVLanyAOABfH5YNh9GZdQYD7A4Nwtd9G2BsnEK_jy6MmPcTXZyQkUShBxrZz-wEWlb6YkIKBUrRx7Txc2uPA8VwE_XgV9nip_DZaU5yqhcDOwBg-vSl7AMunKncrL1N2mEAGDRxwscWvYBohHtqmpo4Fcti8VF3mLxEb6bsXN06iLpCVFtGo1U3ksJNi1m2O9__UrFD2GCBX6WOE-Es06PzIXq1A4mlCojKaBrgKgrbiOWOUNSVuOH7wOFiVCSTRPKUO7s7BTxSR8CkefNRsFDJrZxkc5SZNKmxaicLAni6RWEbiwARI6rZebg_myRyjAQgkTK7_OrYcNM-ZFJQhSLXtAmzoIHOK3YjSglXZWlFbUl-C30dP-9QFOThwdCt4zZvw0wGK3qBoqZrzhVTQw6L4BgzbszB0gW94J80DZrBVH57EQX2cAtY64wYyqhmAwav2vLw8vGamhdRYRdqw-KvJpSURCxZq4PZhI5SqY8yenazKBulHVSBUwToJ8GMJ7G8EwreZqfYlys5SwUoa0ZEm_NVl797hQ-NAbSvv_I5G7HUHrIPjloo-u0v3-RzSwumFy5g5KZN60ULK-8RwNIeVQgBM1f9-OXeQN5Lb8TkSrej2CDhemVgH3zxBeqsAaB_RQ8TxGKShVVdkkeGvKpgme8nk3RiOsyDlZTxMFHbDyRzqvfwIc" nonce="1ec420177ae7951083bf01490a07553d" charset="UTF-8"></script></head>
+  <body>
+    <div id="main">
+    <div id="heading">
+      <h1 >TYPHOID DISEASE PREDICTION</h1>
+      </div>
+      <div id="description">
+        <p>To predict the probability of Malaria</p> 
+      </div><br><br>
+  
+    <div id="form">
+      <form action='/predict' method="post">
+        <div id="age">
+        <label for="Age">Enter your Age</label><br>
+        <input type="number"  id="Age" required>
+        </div><br>
+        <div id="Sex">
+        <label for="gender">Gender</label><br>
+        <input type="number" id="gender" placeholder=" enter 0 for female and 1 for male" min="0" max="1" required>
+        </div><br>
+        <div id="temp">
+        <label for="Temperature">Temperature in  Fahrenheit </label><br>
+        <input type="number" id="Temperature" required>
+        </div><br>
+        <div id="sbp">
+        <label for="systolic">Systolic blood pressure in MM/hg  </label><br>
+        <input type="number" id="systolic" required>
+        </div><br>
+        <div id="dbp">
+        <label for="diastolic">Diastolic blood pressure in MM/hg  </label><br>
+        <input type="number" id="diastolic" required>
+        </div><br>
+        <div id="HR">
+        <label for="heart_rate">Heart Rate in beats/min</label><br>
+        <input type="number" id="heart_rate" required>
+        </div><br>
+        <div id="clinical1">
+        <label for="symptoms1">Fever with or without chills, headache, myalgia and  Constipation or diarrhoea</label><br>
+        <input type="number"  id="symptoms1" placeholder="enter 1 for presence and 0 for absence" max="1" min="0" required>
+        </div><br>
+        <div id="clinical2">
+        <label for="symptoms2">Blood culture for salmonella  and serology test (Widal test) </label><br>
+        <input type="number"  id="symptoms2" placeholder="enter 1 for presence and 0 for absence" max="1" min="0" required>
+        </div><br>
+        <div id="spleen">
+        <label for="abdominal_scan">Swelling near the pelvic region</label><br>
+        <input type="number"  id="abdominal_scan" placeholder="enter 1 for presence and 0 for absence" max="1" min="0" required >
+        </div><br>
+        
+  <div id="button">
+    <button type="submit" id="b">Predict Probability</button>
+  </div>
+     </div>
+      </form>
+    </div>
+  <br>
+  <br>
+    </div>
+  <div>
+  {{pred}}
+    </div>
+  </body>
+</html>
